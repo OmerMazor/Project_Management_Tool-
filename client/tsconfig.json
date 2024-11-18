@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "rootDir": "./",           // Client-specific root directory
+    "outDir": "../dist/client" ,
+    "baseUrl": ".",
+  
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }   // Output to dist/client
+  },
+  "include": [
+    "src/**/*",
+    "vite.config.ts"              // Include vite.config.ts
+  ]
+}
